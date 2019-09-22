@@ -5,15 +5,15 @@ extern "C" {
 
 
 #define INITIALIZE_SDLL\
-    DLLNode head;\
-    DLLNode tail;\
-    head.prev = NULL;\
-    head.next = &tail;\
-    tail.next = NULL;\
-    tail.prev = &head;\
+    DLLNode _head;\
+    DLLNode _tail;\
+    _head.prev = NULL;\
+    _head.next = &_tail;\
+    _tail.next = NULL;\
+    _tail.prev = &_head;\
     SDLL sdll;\
-    sdll.head = &head;\
-    sdll.tail = &tail;\
+    sdll._head = &_head;\
+    sdll._tail = &_tail;\
 
 TEST(SDLL, _0) {
     INITIALIZE_SDLL;

@@ -5,11 +5,11 @@ extern "C" {
 
 
 #define INITIALIZE_QLL\
-    LLNode head;\
-    head.next = NULL;\
+    LLNode _head;\
+    _head.next = NULL;\
     QLL qll;\
-    qll.head = &head;\
-    qll.back = &head;\
+    qll._head = &_head;\
+    qll._back = &_head;\
 
 TEST(QLL, _0) {
     INITIALIZE_QLL;

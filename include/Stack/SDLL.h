@@ -4,8 +4,8 @@
 
 
 typedef struct SDLL {
-    DLLNode* head;
-    DLLNode* tail;
+    DLLNode* _head;
+    DLLNode* _tail;
 } SDLL;;
 
 int sdllIsEmpty(SDLL* self);

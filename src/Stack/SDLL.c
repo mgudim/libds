@@ -2,23 +2,23 @@
 
 
 int sdllIsEmpty(SDLL* self) {
-    return (self->tail->prev == self->head);
+    return (self->_tail->prev == self->_head);
 }
 
 
 DLLNode* sdllPeek(SDLL* self) {
-    return self->tail->prev;
+    return self->_tail->prev;
 }
 
 
 void sdllPush(SDLL* self, DLLNode* node) {
-    dllInsertAfter(node, self->tail->prev);
+    dllInsertAfter(node, self->_tail->prev);
     return;
 }
 
 
 DLLNode* sdllPop(SDLL* self) {
-    DLLNode* top = self->tail->prev;
+    DLLNode* top = self->_tail->prev;
     dllUnlink(top);
     return top;
 }

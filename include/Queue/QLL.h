@@ -4,8 +4,8 @@
 
 
 typedef struct QLL {
-    LLNode* head;
-    LLNode* back;
+    LLNode* _head;
+    LLNode* _back;
 } QLL;
 
 
