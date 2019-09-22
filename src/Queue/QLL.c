@@ -10,17 +10,17 @@ void qllC(QLL* self, LLNode* head) {
 }
 
 
-int qllIsEmpty(QLL* self) {
+int qllIsEmpty(const QLL* self) {
     return (self->_head == self->_back);
 }
 
 
-LLNode* qllPeekFront(QLL* self) {
+LLNode* qllPeekFront(const QLL* self) {
     return self->_head->next;
 }
 
 
-LLNode* qllPeekBack(QLL* self) {
+LLNode* qllPeekBack(const QLL* self) {
     return self->_back;
 }
 

@@ -13,12 +13,12 @@ void sdllC(SDLL* self, DLLNode* head, DLLNode* tail) {
 }
 
 
-int sdllIsEmpty(SDLL* self) {
+int sdllIsEmpty(const SDLL* self) {
     return (self->_tail->prev == self->_head);
 }
 
 
-DLLNode* sdllPeek(SDLL* self) {
+DLLNode* sdllPeek(const SDLL* self) {
     return self->_tail->prev;
 }
 

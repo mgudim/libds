@@ -10,7 +10,7 @@ void dllInsertAfter(DLLNode* nodeToInsert, DLLNode* node) {
 }
 
 
-void dllUnlink(DLLNode* node) {
+void dllUnlink(const DLLNode* node) {
     node->prev->next = node->next;
     node->next->prev = node->prev;
     return;

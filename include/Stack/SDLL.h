@@ -9,8 +9,8 @@ typedef struct SDLL {
 } SDLL;;
 
 void sdllC(SDLL* self, DLLNode* head, DLLNode* tail);
-int sdllIsEmpty(SDLL* self);
-DLLNode* sdllPeek(SDLL* self);
+int sdllIsEmpty(const SDLL* self);
+DLLNode* sdllPeek(const SDLL* self);
 void sdllPush(SDLL* self, DLLNode* node);
 DLLNode* sdllPop(SDLL* self);
 

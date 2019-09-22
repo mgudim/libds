@@ -10,7 +10,7 @@ typedef struct DLLNode {
 
 
 void dllInsertAfter(DLLNode* nodeToInsert, DLLNode* node);
-void dllUnlink(DLLNode* node);
+void dllUnlink(const DLLNode* node);
 
 
 #endif

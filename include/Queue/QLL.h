@@ -10,9 +10,9 @@ typedef struct QLL {
 
 
 void qllC(QLL* self, LLNode* head);
-int qllIsEmpty(QLL* self);
-LLNode* qllPeekFront(QLL* self);
-LLNode* qllPeekBack(QLL* self);
+int qllIsEmpty(const QLL* self);
+LLNode* qllPeekFront(const QLL* self);
+LLNode* qllPeekBack(const QLL* self);
 void qllPush(QLL* self, LLNode* node);
 LLNode* qllPop(QLL* self);
 
