@@ -1,4 +1,16 @@
 #include "Stack/SDLL.h"
+#include <stddef.h>
+
+
+void sdllC(SDLL* self, DLLNode* head, DLLNode* tail) {
+    head->prev = NULL;
+    head->next = tail;
+    tail->prev = head;
+    tail->next = NULL;
+    self->_head = head;
+    self->_tail = tail;
+    return;
+}
 
 
 int sdllIsEmpty(SDLL* self) {

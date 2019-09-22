@@ -9,6 +9,7 @@ typedef struct QLL {
 } QLL;
 
 
+void qllC(QLL* self, LLNode* head);
 int qllIsEmpty(QLL* self);
 LLNode* qllPeekFront(QLL* self);
 LLNode* qllPeekBack(QLL* self);

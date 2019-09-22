@@ -1,4 +1,13 @@
 #include "Queue/QLL.h"
+#include <stddef.h>
+
+
+void qllC(QLL* self, LLNode* head) {
+    head->next = NULL;
+    self->_head = head;
+    self->_back = head;
+    return;
+}
 
 
 int qllIsEmpty(QLL* self) {
