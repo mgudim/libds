@@ -1,14 +1,14 @@
 #include "LinkedList/LL.h"
 
 
-void llInsertAfter(LLNode* nodeToInsert, LLNode* llNode) {
-    nodeToInsert->next = llNode->next;
-    llNode->next = nodeToInsert;
+void llInsertAfter(LLNode* nodeToInsert, LLNode* node) {
+    nodeToInsert->next = node->next;
+    node->next = nodeToInsert;
     return;
 }
 
 
-void llUnlinkAfter(LLNode* llNode) {
-    llNode->next = llNode->next->next;
+void llUnlinkAfter(LLNode* node) {
+    node->next = node->next->next;
     return;
 }

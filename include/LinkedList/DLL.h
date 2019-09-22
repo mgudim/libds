@@ -9,8 +9,8 @@ typedef struct DLLNode {
 } DLLNode;
 
 
-void dllInsertAfter(DLLNode* nodeToInsert, DLLNode* dllNode);
-void dllUnlink(DLLNode* dllNode);
+void dllInsertAfter(DLLNode* nodeToInsert, DLLNode* node);
+void dllUnlink(DLLNode* node);
 
 
 #endif

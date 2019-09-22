@@ -8,8 +8,8 @@ typedef struct LLNode {
 } LLNode;
 
 
-void llInsertAfter(LLNode* nodeToInsert, LLNode* llNode);
-void llUnlinkAfter(LLNode* llNode);
+void llInsertAfter(LLNode* nodeToInsert, LLNode* node);
+void llUnlinkAfter(LLNode* node);
 
 
 #endif
