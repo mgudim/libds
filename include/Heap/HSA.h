@@ -1,8 +1,8 @@
 #ifndef HSA_INC
 #define HSA_INC
+#include "Utils/Utils.h"
 
 
-typedef int (*ComparisonFunction)(void*, void*);
 typedef struct HSA {
     void** _arr;
     unsigned _size;
