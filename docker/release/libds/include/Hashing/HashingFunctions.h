@@ -1,11 +1,9 @@
-#ifndef HASHING_FUNCTIONS
-#define HASHING_FUNCTIONS
-#include <stddef.h>
+#ifndef HASHING_FUNCTIONS_INC
+#define HASHING_FUNCTIONS_INC
 
 
-size_t getModPrime16(int x, size_t numBuckets);
-size_t multiplyShift(int x, unsigned a, unsigned char M);
-unsigned char getPearsonHash256(const char key[], int size);
+unsigned getModPrime16(int x, unsigned range);
+unsigned char getPearsonHash256(const char* key, unsigned size);
 
 
 #endif
