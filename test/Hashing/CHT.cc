@@ -91,3 +91,6 @@ TEST(CHT, _4) {
         ASSERT_TRUE(res == NULL);
     }
 }
+
+
+#undef INITIALIZE_CHT

@@ -48,3 +48,6 @@ TEST(QLL, _3) {
     res = qllPop(&qll);
     ASSERT_TRUE(res == &node2);
 }
+
+
+#undef INITIALIZE_QLL

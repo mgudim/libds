@@ -64,3 +64,6 @@ TEST(HSA, _2) {
         ASSERT_TRUE(arr[i + 1] == expected[i]);
     }
 }
+
+
+#undef INITIALIZE_HSA
