@@ -7,7 +7,7 @@ extern "C" {
 
 
 #define INITIALIZE_HSA\
-    unsigned size = 7;\
+    unsigned const size = 7;\
     void* arr[size + 1];\
     ComparisonFunction compareFn = &compareInts;\
     HSA hsa;\

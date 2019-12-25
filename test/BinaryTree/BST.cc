@@ -208,7 +208,7 @@ TEST(BST, _3) {
 
 #define INITIALIZE_SMALL\
     INITIALIZE_BST;\
-    unsigned numNodes = 5;\
+    unsigned const numNodes = 5;\
     BSTNode nodes[numNodes];\
     void* values[numNodes] = {\
         (void*) 3, (void*) 1, (void*) 2, (void*) 4, (void*) 0\
