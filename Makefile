@@ -10,5 +10,6 @@ clean:
 
 
 docker: build
+	mkdir docker/release/libds
 	cp build/src/libds.a docker/release/libds/libds.a
 	cp -r include docker/release/libds
