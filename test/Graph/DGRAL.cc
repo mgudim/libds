@@ -30,6 +30,17 @@ extern "C" {
 
 TEST(DGRAL, _0) {
     unsigned froms[1] = {0};
+    unsigned tos[1] = {0};
+    SET_UP(1, 1);
+
+    dgralGetSuccessorsIterator(&nodes[0], &iter);
+    ASSERT_EQ(dgralGetNextNeighbour(&iter), &nodes[0]);
+    ASSERT_TRUE(dgralGetNextNeighbour(&iter) == NULL);
+}
+
+
+TEST(DGRAL, _1) {
+    unsigned froms[1] = {0};
     unsigned tos[1] = {1};
     SET_UP(2, 1);
 
@@ -44,7 +55,7 @@ TEST(DGRAL, _0) {
 }
 
 
-TEST(DGRAL, _1) {
+TEST(DGRAL, _2) {
     unsigned froms[6] = {0, 1, 0, 2, 2, 4};
     unsigned tos[6] = {1, 3, 2, 3, 4, 0};
     SET_UP(5, 6);
